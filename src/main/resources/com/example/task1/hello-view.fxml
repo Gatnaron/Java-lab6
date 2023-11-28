@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<VBox alignment="CENTER" prefHeight="410.0" prefWidth="665.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task1.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <FlowPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <ListView fx:id="listview" prefHeight="71.0" prefWidth="639.0" />
+      </children>
+   </FlowPane>
+   <Canvas fx:id="canvas" height="287.0" onMouseClicked="#onMouseClicked" width="639.0" />
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <ColorPicker fx:id="colorPicker" prefHeight="26.0" prefWidth="88.0">
+            <value>
+               <Color red="1.0" />
+            </value></ColorPicker>
+         <ColorPicker fx:id="outlineColor" prefHeight="26.0" prefWidth="90.0">
+            <value>
+               <Color blue="1.0" />
+            </value></ColorPicker>
+         <Label prefHeight="25.0" prefWidth="52.0" text="Ширина">
+            <HBox.margin>
+               <Insets left="65.0" />
+            </HBox.margin></Label>
+         <TextField fx:id="widthInput" prefHeight="26.0" prefWidth="59.0" text="50" />
+         <Label layoutX="332.0" layoutY="10.0" prefHeight="32.0" prefWidth="46.0" text="Высота" textAlignment="CENTER">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin></Label>
+         <TextField fx:id="heightInput" layoutX="379.0" layoutY="10.0" prefHeight="26.0" prefWidth="59.0" text="50" />
+         <Button mnemonicParsing="false" onAction="#CancelDraw" prefHeight="25.0" prefWidth="84.0" text="Назад">
+            <HBox.margin>
+               <Insets left="100.0" right="5.0" />
+            </HBox.margin></Button>
+      </children>
+   </HBox>
+</VBox>
