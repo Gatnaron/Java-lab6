@@ -76,8 +76,8 @@ public class HelloController implements Initializable {
         figures.pollLast();
         GraphicsContext gc = canvas.getGraphicsContext2D();
         gc.clearRect(0, 0, canvas.getWidth(), canvas.getHeight());
-        for (Shape sh:
-             figures) {
+        for (Shape sh:figures)
+        {
             sh.draw(gc);
         }
     }
